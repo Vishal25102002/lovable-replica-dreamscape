@@ -54,10 +54,15 @@ export default {
 				},
 				lovable: {
 					gradient: {
-						start: 'hsl(var(--lovable-gradient-start))',
-						middle: 'hsl(var(--lovable-gradient-middle))',
-						end: 'hsl(var(--lovable-gradient-end))'
+						start: 'hsl(25 95% 53%)',
+						middle: 'hsl(20 100% 60%)',
+						end: 'hsl(15 90% 50%)'
 					}
+				},
+				orange: {
+					primary: 'hsl(25 95% 53%)',
+					secondary: 'hsl(39 100% 85%)',
+					accent: 'hsl(20 100% 60%)'
 				},
 				sidebar: {
 					DEFAULT: 'hsl(var(--sidebar-background))',
