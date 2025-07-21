@@ -1,6 +1,7 @@
 import Navigation from "@/components/Navigation";
 import Hero from "@/components/Hero";
 import CommunityShowcase from "@/components/CommunityShowcase";
+import Footer from "@/components/Footer";
 
 const Index = () => {
   return (
@@ -8,6 +9,7 @@ const Index = () => {
       <Navigation />
       <Hero />
       <CommunityShowcase />
+      <Footer />
     </div>
   );
 };

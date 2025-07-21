@@ -1,4 +1,5 @@
 import { Button } from "@/components/ui/button";
+import { Link } from "react-router-dom";
 
 const Navigation = () => {
   return (
@@ -29,6 +30,9 @@ const Navigation = () => {
           <a href="#" className="text-muted-foreground hover:text-foreground transition-colors">
             Launched
           </a>
+          <Link to="/contact" className="text-muted-foreground hover:text-foreground transition-colors">
+            Contact
+          </Link>
         </div>
 
         {/* Auth Buttons */}

@@ -7,41 +7,74 @@ const CommunityShowcase = () => {
   const projects = [
     {
       id: 1,
-      title: "pulse-robot-template",
-      category: "Website",
-      remixes: "15,310",
-      image: "https://images.unsplash.com/photo-1555066931-4365d14bab8c?w=400&h=250&fit=crop",
+      title: "modern-portfolio-showcase",
+      category: "Portfolio",
+      remixes: "12,840",
+      image: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=400&h=250&fit=crop",
       author: {
-        name: "Alex Chen",
+        name: "Emily Rodriguez",
         avatar: "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=40&h=40&fit=crop&crop=face"
       }
     },
     {
       id: 2,
-      title: "cryptocurrency-trading-dashboard",
-      category: "Website",
-      remixes: "10,315",
-      image: "https://images.unsplash.com/photo-1611974789855-9c2a0a7236a3?w=400&h=250&fit=crop",
+      title: "saas-landing-generator",
+      category: "Landing Page",
+      remixes: "8,920",
+      image: "https://images.unsplash.com/photo-1551650975-87deedd944c3?w=400&h=250&fit=crop",
       author: {
-        name: "Sarah Kim",
+        name: "David Kim",
         avatar: "https://images.unsplash.com/photo-1494790108755-2616b612b820?w=40&h=40&fit=crop&crop=face"
       }
     },
     {
       id: 3,
-      title: "wrlds-ai-integration",
-      category: "Website",
-      remixes: "6,362",
-      image: "https://images.unsplash.com/photo-1558655146-9f40138edfeb?w=400&h=250&fit=crop",
+      title: "creative-agency-template",
+      category: "Business",
+      remixes: "6,750",
+      image: "https://images.unsplash.com/photo-1559136555-9303baea8ebd?w=400&h=250&fit=crop",
       author: {
-        name: "Mike Johnson",
+        name: "Jessica Chen",
+        avatar: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=40&h=40&fit=crop&crop=face"
+      }
+    },
+    {
+      id: 4,
+      title: "e-commerce-storefront",
+      category: "E-commerce",
+      remixes: "9,430",
+      image: "https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?w=400&h=250&fit=crop",
+      author: {
+        name: "Michael Torres",
+        avatar: "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=40&h=40&fit=crop&crop=face"
+      }
+    },
+    {
+      id: 5,
+      title: "blog-publishing-platform",
+      category: "Blog",
+      remixes: "5,280",
+      image: "https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d?w=400&h=250&fit=crop",
+      author: {
+        name: "Sarah Martinez",
+        avatar: "https://images.unsplash.com/photo-1494790108755-2616b612b820?w=40&h=40&fit=crop&crop=face"
+      }
+    },
+    {
+      id: 6,
+      title: "startup-dashboard-ui",
+      category: "Dashboard",
+      remixes: "7,640",
+      image: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=400&h=250&fit=crop",
+      author: {
+        name: "Alex Thompson",
         avatar: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=40&h=40&fit=crop&crop=face"
       }
     }
   ];
 
   const categories = [
-    "Popular", "Discover", "Internal Tools", "Website", "Personal", "Consumer App", "B2B App", "Prototype"
+    "Popular", "Discover", "Portfolio", "Landing Page", "Business", "E-commerce", "Blog", "Dashboard"
   ];
 
   return (
@@ -71,7 +104,7 @@ const CommunityShowcase = () => {
         {/* Project Grid */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
           {projects.map((project) => (
-            <Card key={project.id} className="group overflow-hidden hover:shadow-elegant transition-all duration-300 hover:-translate-y-1">
+            <Card key={project.id} className="group overflow-hidden hover:shadow-elegant transition-all duration-500 hover:-translate-y-2 hover:shadow-2xl hover:shadow-primary/20">
               {/* Project Image */}
               <div className="relative aspect-video overflow-hidden">
                 <img
